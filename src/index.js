@@ -5,7 +5,7 @@ import type { Model } from '@lukekaalim/model';
 import { nameModel, stringModel, numberModel, modelObject } from '@lukekaalim/model';
 
 /*::
-type Session = {
+export type Session = {
   id: string,
   title: string,
   startTime: number,

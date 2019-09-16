@@ -1,1 +1,1 @@
-contour
+# @astral-atlas/contour

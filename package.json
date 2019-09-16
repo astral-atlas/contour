@@ -1,0 +1,32 @@
+{
+  "name": "@astral-atlas/contour",
+  "version": "0.1.0",
+  "description": "Models and utils to describe Astral Atlas Primitives",
+  "main": "dist/contour.cjs.js",
+  "module": "dist/contour.esm.js",
+  "scripts": {
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags",
+    "test": "node -r esm test",
+    "prepublish": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astral-atlas/contour.git"
+  },
+  "author": "luke kaalim (luke@kaal.im)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astral-atlas/contour/issues"
+  },
+  "homepage": "https://github.com/astral-atlas/contour#readme",
+  "dependencies": {
+    "@lukekaalim/model": "^2.0.0"
+  },
+  "devDependencies": {
+    "@lukekaalim/test": "^5.0.0",
+    "esm": "^3.2.25",
+    "rollup": "^1.21.4",
+    "rollup-plugin-flow-entry": "^0.3.1"
+  }
+}

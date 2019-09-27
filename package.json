@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/astral-atlas/contour#readme",
   "dependencies": {
-    "@lukekaalim/model": "^2.0.0"
+    "@lukekaalim/model": "^2.1.1"
   },
   "devDependencies": {
     "@lukekaalim/test": "^5.0.0",

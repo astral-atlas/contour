@@ -1,8 +1,10 @@
 // @flow strict
 /*::
 import type { Model } from '@lukekaalim/model';
+export type * from './systems';
 */
 import { nameModel, stringModel, numberModel, modelObject, modelOptional } from '@lukekaalim/model';
+export * from './systems';
 
 /*::
 export type LocationID = string;

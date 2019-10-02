@@ -69,16 +69,16 @@ export type Spell = {
 */
 
 const castingTimeModel = modelDisjointUnion('type', {
-  'action':       modelObject({ type: modelLiteral('action') }),
-  'bonus-action': modelObject({ type: modelLiteral('bonus-action') }),
-  'reaction':     modelObject({ type: modelLiteral('reaction'), triggerDescription: stringModel }),
-  'minutes':      modelObject({ type: modelLiteral('minutes'), timeInMinutes: stringModel })
+  'action':       modelObject({ type: (modelLiteral('action')/*: Model<'action'>*/) }),
+  'bonus-action': modelObject({ type: (modelLiteral('bonus-action')/*: Model<'bonus-action'>*/) }),
+  'reaction':     modelObject({ type: (modelLiteral('reaction')/*: Model<'reaction'>*/), triggerDescription: stringModel }),
+  'minutes':      modelObject({ type: (modelLiteral('minutes')/*: Model<'minutes'>*/), timeInMinutes: stringModel })
 });
 
 const componentModel = modelDisjointUnion('type', {
-  'verbal':   modelObject({ type: modelLiteral('verbal') }),
-  'somantic': modelObject({ type: modelLiteral('somantic') }),
-  'material': modelObject({ type: modelLiteral('material'), items: modelArray(modelObject({ priceInCopper: numberModel, description: stringModel })) }),
+  'verbal':   modelObject({ type: (modelLiteral('verbal')/*: Model<'verbal'>*/) }),
+  'somantic': modelObject({ type: (modelLiteral('somantic')/*: Model<'somantic'>*/) }),
+  'material': modelObject({ type: (modelLiteral('material')/*: Model<'material'>*/), items: modelArray(modelObject({ priceInCopper: numberModel, description: stringModel })) }),
 })
 
 export const spellModel/*: Model<Spell>*/ = modelObject({

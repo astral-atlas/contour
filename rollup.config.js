@@ -1,4 +1,5 @@
 const flowEntry = require('rollup-plugin-flow-entry');
+const { terser } = require('rollup-plugin-terser');
 
 module.exports = {
   input: 'src/index',
@@ -12,6 +13,6 @@ module.exports = {
       format: 'esm'
     }
   ],
-  plugins: [flowEntry()],
+  plugins: [flowEntry(), terser()],
   external: ['@lukekaalim/model']
 }

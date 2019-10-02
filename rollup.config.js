@@ -13,6 +13,6 @@ module.exports = {
       format: 'esm'
     }
   ],
-  plugins: [flowEntry(), terser()],
+  plugins: [flowEntry({ mode: 'strict' }), terser()],
   external: ['@lukekaalim/model']
 }

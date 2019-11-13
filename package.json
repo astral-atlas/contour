@@ -1,6 +1,6 @@
 {
   "name": "@astral-atlas/contour",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Models and utils to describe Astral Atlas Primitives",
   "main": "dist/contour.cjs.js",
   "module": "dist/contour.esm.js",

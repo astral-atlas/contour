@@ -5,12 +5,14 @@ export type * from './systems';
 export type * from './characters';
 export type * from './chapters';
 export type * from './text';
+export type * from './player';
 */
 import { nameModel, stringModel, numberModel, modelObject, modelOptional } from '@lukekaalim/model';
 export * from './systems';
 export * from './characters';
 export * from './chapters';
 export * from './text';
+export * from './player';
 
 /*::
 export type LocationID = string;
